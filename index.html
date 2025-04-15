@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Block Match - Blast Game, el juego de puzzle más divertido y desafiante para todas las edades.">
+  <link rel="icon" href="favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/game-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>Block Match - Blast Game | Juega Apuesta Segura</title>
+</head>
+<body class="bg-gradient-to-br from-green-400 via-teal-500 to-blue-600 text-white" style="font-size:17px;">
+
+ <nav class="bg-gray-900 shadow-md">
+  <div class="container mx-auto flex items-center justify-between py-4 px-6">
+    <div class="flex items-center">
+      <img src="images/logo.png" alt="Logo" class="h-10 mr-3">
+      <span class="text-2xl font-bold">Block Match</span>
+    </div>
+    <button id="menu-btn" class="md:hidden focus:outline-none">
+      <i class="fas fa-bars text-2xl"></i>
+    </button>
+    <ul id="menu" class="md:flex md:space-x-6 hidden flex-col absolute top-full left-0 w-full bg-gray-900 text-white md:static md:flex-row md:w-auto md:bg-transparent z-50">
+      <li><a href="#sobre" class="hover:text-yellow-300 block py-2 px-6">Sobre el juego</a></li>
+      <li><a href="#caracteristicas" class="hover:text-yellow-300 block py-2 px-6">Características</a></li>
+      <li><a href="#galeria" class="hover:text-yellow-300 block py-2 px-6">Galería</a></li>
+      <li><a href="#opiniones" class="hover:text-yellow-300 block py-2 px-6">Opiniones</a></li>
+      <li><a href="#faq" class="hover:text-yellow-300 block py-2 px-6">FAQ</a></li>
+    </ul>
+  </div>
+  <div id="mobile-menu" class="md:hidden hidden px-6 pb-4">
+    <ul class="space-y-2">
+      <li><a href="#sobre" class="block text-white hover:text-yellow-300">Sobre el juego</a></li>
+      <li><a href="#caracteristicas" class="block text-white hover:text-yellow-300">Características</a></li>
+      <li><a href="#galeria" class="block text-white hover:text-yellow-300">Galería</a></li>
+      <li><a href="#opiniones" class="block text-white hover:text-yellow-300">Opiniones</a></li>
+      <li><a href="#faq" class="block text-white hover:text-yellow-300">FAQ</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- Sección Principal con fondo de video -->
+<header class="relative w-full h-screen overflow-hidden flex items-center justify-center">
+  <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+    <source src="https://play-games.googleusercontent.com/vp/mp4/1280x720/drsKB5bDJyA.mp4" type="video/mp4">
+    </video>
+    <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 z-10"></div>
+    <div class="relative z-20 text-center">
+      <h1 class="text-5xl font-bold mb-6">Block Match - Blast Game</h1>
+      <a href="#descargar">
+        <img src="images/google-play-button.png" alt="Descargar en Google Play" class="mx-auto w-48 hover:scale-105 transition transform duration-300" style="width: 350px;border-radius: 15px;border: 3px solid yellow">
+      </a>
+    </div>
+  </header>
+
+  <section id="sobre" class="container mx-auto py-12 grid md:grid-cols-2 gap-8 items-center">
+    <img src="images/about.jpg" class="rounded-lg shadow-lg">
+    <div>
+      <h2 class="text-3xl font-bold mb-4">🎮 Sobre Block Match</h2>
+      <p>Block Match es un juego adictivo de puzzle en el que deberás colocar estratégicamente diferentes bloques para completar y eliminar filas y columnas. Con una jugabilidad sencilla pero desafiante, este juego pone a prueba tu ingenio y capacidad de planificación. A medida que avanzas, los niveles se vuelven más complicados, manteniéndote entretenido durante horas. Perfecto para relajarte, desafiar a amigos y disfrutar en cualquier momento y lugar.</p>
+    </div>
+  </section>
+
+  <!-- Características -->
+  <section id="caracteristicas" class="container mx-auto grid md:grid-cols-3 gap-6 py-10">
+    <div class="p-6 bg-teal-700 rounded-lg shadow-md text-center">
+      <i class="fas fa-gamepad text-4xl mb-3"></i>
+      <h3 class="font-bold">Adictivo</h3>
+      <p>Horas de diversión garantizada.</p>
+    </div>
+    <div class="p-6 bg-teal-700 rounded-lg shadow-md text-center">
+      <i class="fas fa-paint-brush text-4xl mb-3"></i>
+      <h3 class="font-bold">Colorido</h3>
+      <p>Diseño atractivo y vibrante.</p>
+    </div>
+    <div class="p-6 bg-teal-700 rounded-lg shadow-md text-center">
+      <i class="fas fa-download text-4xl mb-3"></i>
+      <h3 class="font-bold">Gratuito</h3>
+      <p>Disponible gratis en Google Play.</p>
+    </div>
+  </section>
+
+  <!-- Galería -->
+  <section id="galeria" class="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 py-8">
+    <img src="images/screen1.jpg" class="rounded shadow-lg">
+    <img src="images/screen2.jpg" class="rounded shadow-lg">
+    <img src="images/screen3.jpg" class="rounded shadow-lg">
+    <img src="images/screen4.jpg" class="rounded shadow-lg">
+  </section>
+
+  <!-- Opiniones -->
+  <section id="opiniones" class="container mx-auto py-12">
+    <h2 class="text-3xl font-bold mb-10 text-center">💬 Opiniones</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <div class="bg-blue-700 bg-opacity-80 rounded-xl p-6 shadow-lg flex items-start space-x-4">
+        <img src="images/user1.jpg" alt="Valentina R." class="w-16 h-16 rounded-full object-cover">
+        <div>
+          <h3 class="text-xl font-semibold">Valentina R.</h3>
+          <p class="text-yellow-300">
+            ★★★★★
+          </p>
+          <p>“Este juego me tiene enganchada. Es colorido, rápido y perfecto para relajarme después del trabajo.”</p>
+        </div>
+      </div>
+
+      <div class="bg-blue-700 bg-opacity-80 rounded-xl p-6 shadow-lg flex items-start space-x-4">
+        <img src="images/user2.jpg" alt="Mateo G." class="w-16 h-16 rounded-full object-cover">
+        <div>
+          <h3 class="text-xl font-semibold">Mateo G.</h3>
+          <p class="text-yellow-300">
+            ★★★★☆
+          </p>
+          <p>“Me gusta mucho el diseño y la mecánica. Me encantaría ver más niveles en el futuro.”</p>
+        </div>
+      </div>
+
+      <div class="bg-blue-700 bg-opacity-80 rounded-xl p-6 shadow-lg flex items-start space-x-4">
+        <img src="images/user3.jpg" alt="Camila S." class="w-16 h-16 rounded-full object-cover">
+        <div>
+          <h3 class="text-xl font-semibold">Camila S.</h3>
+          <p class="text-yellow-300">
+            ★★★★★
+          </p>
+          <p>“Block Match se ha convertido en mi juego favorito. Me encanta cómo me reta sin estresarme.”</p>
+        </div>
+      </div>
+
+      <div class="bg-blue-700 bg-opacity-80 rounded-xl p-6 shadow-lg flex items-start space-x-4">
+        <img src="images/user4.jpg" alt="Tomás V." class="w-16 h-16 rounded-full object-cover">
+        <div>
+          <h3 class="text-xl font-semibold">Tomás V.</h3>
+          <p class="text-yellow-300">
+            ★★★★☆
+          </p>
+          <p>“Muy divertido y fácil de jugar. Ideal para pasar el tiempo en el metro o mientras espero.”</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="faq" class="container mx-auto py-16">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-4xl font-bold mb-8">❓ Preguntas Frecuentes</h2>
+        <div class="space-y-6 text-lg">
+          <div class="bg-indigo-800 bg-opacity-80 p-5 rounded-xl shadow-md">
+            <h3 class="font-bold text-2xl mb-2">¿Puedo jugar sin internet?</h3>
+            <p class="text-white">Sí, el juego funciona perfectamente en modo offline para que puedas disfrutarlo donde quieras.</p>
+          </div>
+          <div class="bg-indigo-800 bg-opacity-80 p-5 rounded-xl shadow-md">
+            <h3 class="font-bold text-2xl mb-2">¿Cuáles son los requisitos mínimos?</h3>
+            <p class="text-white">Solo necesitas un dispositivo Android con versión 5.0 o superior. ¡Ligero y accesible!</p>
+          </div>
+          <div class="bg-indigo-800 bg-opacity-80 p-5 rounded-xl shadow-md">
+            <h3 class="font-bold text-2xl mb-2">¿El juego es completamente gratuito?</h3>
+            <p class="text-white">¡Sí! No necesitas pagar nada para disfrutar de todas las funciones del juego.</p>
+          </div>
+          <div class="bg-indigo-800 bg-opacity-80 p-5 rounded-xl shadow-md">
+            <h3 class="font-bold text-2xl mb-2">¿Cómo se guardan los progresos?</h3>
+            <p class="text-white">Tu avance se guarda automáticamente en tu dispositivo cada vez que juegas.</p>
+          </div>
+          <div class="bg-indigo-800 bg-opacity-80 p-5 rounded-xl shadow-md">
+            <h3 class="font-bold text-2xl mb-2">¿Hay funciones de personalización?</h3>
+            <p class="text-white">Sí, puedes cambiar el tema visual y los sonidos desde el menú de configuración.</p>
+          </div>
+          <div class="bg-indigo-800 bg-opacity-80 p-5 rounded-xl shadow-md">
+            <h3 class="font-bold text-2xl mb-2">¿Puedo compartir mi puntuación?</h3>
+            <p class="text-white">¡Claro! Puedes compartir tu récord con amigos mediante redes sociales.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="images/faq-image.jpg" alt="Preguntas Frecuentes" class="rounded-xl shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-purple-900 text-white py-12">
+    <div class="container mx-auto grid md:grid-cols-4 gap-8 text-left px-6">
+      <!-- Contacto -->
+      <div>
+        <h3 class="font-bold text-xl mb-4">Contacto</h3>
+        <p class="mb-2"><i class="fas fa-phone-alt mr-2"></i> +56 32 332 5548</p>
+        <p class="mb-2"><i class="fas fa-envelope mr-2"></i> contacto@blockmatch.com</p>
+        <p><i class="fas fa-map-marker-alt mr-2"></i> Av. Los Carrera 721, local 42,<br>2430000 Quilpué, Valparaíso, Chile</p>
+      </div>
+
+      <!-- Enlaces útiles -->
+      <div>
+        <h3 class="font-bold text-xl mb-4">Políticas</h3>
+        <li><a href="privacy.html" class="hover:underline">Política de Privacidad</a></li>
+        <li><a href="terms.html" class="hover:underline">Términos y Condiciones</a></li>
+        <li><a href="cookies.html" class="hover:underline">Política de Cookies</a></li>
+      </div>
+
+      <!-- Enlaces rápidos -->
+      <div>
+        <h3 class="font-bold text-xl mb-4">Navegación</h3>
+        <ul class="space-y-2">
+          <li><a href="#sobre" class="hover:underline">Sobre el juego</a></li>
+          <li><a href="#caracteristicas" class="hover:underline">Características</a></li>
+          <li><a href="#galeria" class="hover:underline">Galería</a></li>
+          <li><a href="#faq" class="hover:underline">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div>
+        <h3 class="font-bold text-xl mb-4">Suscríbete</h3>
+        <p class="mb-4">Recibe noticias y actualizaciones directamente en tu correo.</p>
+        <form action="#" method="POST" class="space-y-4">
+          <input type="email" placeholder="Tu correo electrónico" class="w-full p-2 rounded text-black" required>
+          <button type="submit" class="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 rounded">Suscribirse</button>
+        </form>
+      </div>
+    </div>
+    <div class="text-center mt-8">
+      <p>&copy; 2025 Block Match - Blast Game. Todos los derechos reservados.</p>
+      <a href="https://play.google.com/store/apps/details?id=io.yarsa.games.blockpuzzle&hl=en" class="underline">Descargar en Google Play</a>
+    </div>
+  </footer>
+
+  <div id="cookie-banner" class="accept-cookies fixed bottom-4 right-4 bg-gray-900 text-white p-6 rounded-xl shadow-xl w-80 z-50">
+  <h3 class="text-lg font-semibold mb-2">🍪 Cookies</h3>
+  <p class="text-sm mb-4">Usamos cookies para mejorar tu experiencia. Al continuar navegando, aceptas nuestra política.</p>
+  <div class="flex justify-end">
+    <button onclick="document.getElementById('cookie-banner').style.display='none'" class="bg-yellow-400 text-black font-bold px-4 py-2 rounded hover:bg-yellow-500 transition">Aceptar</button>
+  </div>
+</div>
+
+<script src="js/game-script.js"></script>
+<script>
+  // Если требуется обработка через класс, можно выбрать элемент по классу:
+  document.querySelector('.accept-cookies').addEventListener('click', function () {
+    document.getElementById('cookie-banner').classList.add('hidden');
+  });
+</script>
+
+</body>
+</html>
